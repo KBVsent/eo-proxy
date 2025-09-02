@@ -28,6 +28,7 @@ const domainMappings = {
   "/steam-api": "https://api.steampowered.com",
   "/gb": "https://github.com",
   "/gs": "https://raw.githubusercontent.com",
+  "/mai": "https://maimaidx.jp/maimai-mobile/img",
 };
 
 const specialCases = {
