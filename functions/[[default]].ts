@@ -29,6 +29,7 @@ const domainMappings = {
   "/gb": "https://github.com",
   "/gs": "https://raw.githubusercontent.com",
   "/mai": "https://maimaidx.jp/maimai-mobile/img",
+  "/hg": "https://huggingface.co",
 };
 
 const specialCases = {
