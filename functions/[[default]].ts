@@ -111,9 +111,10 @@ export async function onRequest({ request }: { request: EORequest }) {
   }
 
   const targetBase = domainMappings[basePath];
-  const targetPath = url.pathname.slice(basePath.length) + url.search + url.hash;
-
-  const targetUrl = new URL(targetPath, targetBase);
+  const remainingPath = url.pathname.slice(basePath.length);
+  
+  // 确保正确拼接URL，避免new URL的绝对路径问题
+  const targetUrl = new URL(targetBase + remainingPath + url.search + url.hash);
 
   // 请求头处理
   const headers = new Headers(request.headers);
